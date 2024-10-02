@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../assets/animados-cars-cartoon-dibujos-wallpaper-preview.jpg'); /* Ruta de tu imagen */
+  background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
+}
+
+#main-nav ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-nav ul li {
+  margin: 0 15px ;
+}
+
+#main-nav ul li a {
+  text-decoration:underline;
+  color: white;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+  position: relative;
+  padding: 20px;
+}
+
+.site-title {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.site-title:hover {
+  color: #ed6f00;
+  text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.7);
+}
+
+#cartelera {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#cartelera-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.movie-grid .movie-card{
+  width: 250px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+  transition: transform 0.3, box-shadow 0.3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-grid .movie-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#main-footer {
+  color: white;
+  text-align: right;
+  font-size: 14px;
+  position: relative; 
+
+}
