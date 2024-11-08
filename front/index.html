@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Proyecto de M2</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine Facundo</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header id="mainHeader">
+    <h1 id="siteTitle">Cine Facundo</h1>
+    <nav id="navigation">
+      <ul id="navList">
+        <li id="homeLink"><a href="./index.html">Home</a></li>
+        <li id="aboutLink"><a href="./about.html">About</a></li>
+        <li id="newsLink"><a href="./noticias.html">Noticias</a></li>
+        <li id="createMovieLink"><a href="./form.html">Crear Peliculas</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="./scripts/tempData.js"></script>
-    <script src="./scripts/index.js"></script>
-  </body>
+  <main id="mainContent">
+    <section id="cardsSection">
+      <article id="cardsContainer"></article>
+    </section>
+  </main>
+
+  <script src="public/bundle.js"></script>
+</body>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine Facundo</title>
+  <!-- Link a Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  
+</head>
+<body class="bg-light">
+
+  <header id="mainHeader" class="text-center py-3 mb-4 bg-dark text-white">
+    <h1 id="siteTitle">Crear Peliculas</h1>
+    <nav id="navigation">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white" href="./index.html" id="homeLink">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./about.html" id="aboutLink">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./noticias.html" id="newsLink">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./form.html" id="createMoviesLink">Crear Peliculas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container d-flex justify-content-center">
+    <div class="col-md-8 col-lg-6 bg-white p-4 shadow rounded">
+      <h2 class="text-center mb-4">Formulario de Creación de Película</h2>
+      <form>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title:</label>
+          <input type="text" class="form-control" placeholder="Titanic.." required id="title">
+        </div>
+
+        <div class="mb-3">
+          <label for="year" class="form-label">Year:</label>
+          <input type="number" class="form-control" placeholder="2010" min="1890" max="2024" required id="year">
+        </div>
+
+        <div class="mb-3">
+          <label for="director" class="form-label">Director:</label>
+          <input type="text" class="form-control" placeholder="Nathan Grego" required id="director">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Duration (hours and minutes):</label>
+          <div class="d-flex">
+            <input type="number" class="form-control me-2" placeholder="Hours" min="0" required id="durationH">
+            <input type="number" class="form-control" placeholder="Minutes" min="0" max="59" required id="durationM">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Genre:</label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Musical">
+            <label class="form-check-label">Musical</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Romance">
+            <label class="form-check-label">Romance</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Comedy">
+            <label class="form-check-label">Comedy</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Drama">
+            <label class="form-check-label">Drama</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Sci-Fi">
+            <label class="form-check-label">Sci-Fi</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Horror">
+            <label class="form-check-label">Horror</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="Suspense">
+            <label class="form-check-label">Suspense</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="rate" class="form-label">Rate:</label>
+          <input type="number" step="0.1" class="form-control" placeholder="8.6" min="1" max="10" required id="rate">
+        </div>
+
+        <div class="mb-3">
+          <label for="poster" class="form-label">Poster:</label>
+          <input type="url" class="form-control" placeholder="link-img.jpg" required id="poster">
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <input type="submit" value="Crear Pelicula" class="btn btn-primary">
+          <button id="clearForm" type="button" class="btn btn-secondary">Limpiar Formulario</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/bundle.js"></script>
+</body>
+</html>
+
